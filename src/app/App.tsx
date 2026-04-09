@@ -240,7 +240,7 @@ export default function App() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/yourplanet.lifestyle/"
               target="_blank"
               rel="noreferrer"
               className="flex h-11 w-11 items-center justify-center rounded-[0.35rem] border border-[var(--ocean)]/12 bg-white text-[var(--ocean)] transition hover:-translate-y-0.5 hover:border-[var(--mint)] hover:text-[var(--mint-deep)]"
