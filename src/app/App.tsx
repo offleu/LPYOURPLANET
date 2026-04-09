@@ -217,8 +217,8 @@ export default function App() {
 
   return (
     <div className="overflow-x-clip bg-[var(--sand)] text-[var(--ink)] selection:bg-[var(--mint)]/30 selection:text-[var(--ink)]">
-      <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 md:px-6">
-        <div className="mx-auto flex max-w-7xl items-center justify-center rounded-[0.45rem] border border-black/8 bg-white/88 px-4 py-4 shadow-[0_12px_34px_rgba(29,55,67,0.08)] backdrop-blur-md lg:justify-between md:px-6">
+      <header className="relative z-20 px-4 pb-2 pt-5 md:px-6 md:pt-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-center lg:justify-between">
           <button className="flex items-center justify-center gap-3" onClick={() => scrollToSection('top')}>
             <img src="/media/yourplanet-logo.png" alt="Your Planet Lifestyle" className="h-20 w-auto md:h-14 lg:h-14" />
             <div className="hidden lg:block">
@@ -280,7 +280,7 @@ export default function App() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(127,233,220,0.28),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,196,137,0.25),transparent_30%)]" />
           </div>
 
-          <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8">
+          <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:px-8">
             <div className="grid w-full gap-8 sm:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
               <motion.div {...fadeInUp(!!reduceMotion)} className="min-w-0 max-w-3xl">
                 
