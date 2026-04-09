@@ -546,7 +546,7 @@ export default function App() {
               <motion.div {...fadeInUp(!!reduceMotion)}>
                 <p className="section-kicker !text-white/55">Contato</p>
                 <h2 className="font-display text-3xl leading-tight text-white sm:text-5xl">
-                  AdquirA POLARBOX AGORA
+                  Adquira Polarbox agora!
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-8 text-white/72">
                   Preencha o formulário ou contate-nos pelo nosso E-mail ou WhatsApp para receber atendimento humanizado do nosso time.
@@ -563,11 +563,11 @@ export default function App() {
                     +55 (48) 99155-7202
                   </a>
                   <a
-                    href="mailto:contato@yourplanet.com.br"
+                    href="mailto:yourplanet@gfpbrasil.com"
                     className="wrap-safe flex items-center gap-3 rounded-[0.35rem] border border-white/10 bg-white/5 px-4 py-4 text-white/82"
                   >
                     <Mail className="h-5 w-5 text-[var(--sun)]" />
-                    contato@yourplanet.com.br
+                    yourplanet@gfpbrasil.com
                   </a>
                 </div>
               </motion.div>
@@ -715,7 +715,7 @@ export default function App() {
                   <p className="text-xs uppercase tracking-[0.32em] text-[var(--ocean)]/55">Contato</p>
                   <div className="mt-4 space-y-3 text-[var(--ink)]/78">
                     <p className="text-base leading-7">(48) 99155-7202</p>
-                    <p className="wrap-safe text-base leading-7">contato@yourplanet.com.br</p>
+                    <p className="wrap-safe text-base leading-7">yourplanet@gfpbrasil.com</p>
                     <p className="text-base leading-7">
                       Rua dos Cações
                       <br />
