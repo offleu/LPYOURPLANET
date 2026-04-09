@@ -467,8 +467,7 @@ export default function App() {
               >
                 <h3 className="mt-4 font-display text-3xl leading-tight sm:text-4xl">Como Comprar</h3>
                 <p className="mt-5 text-base leading-7 text-white/78">
-                  Cada bloco foi desenhado para funcionar bem em social, campanhas pagas e apresentações comerciais,
-                  sempre com foco em percepção de marca.
+                  Temos um time especializado e preparado para lhe atender.
                 </p>
 
                 <div className="mt-8 space-y-4">
@@ -550,7 +549,7 @@ export default function App() {
                   AdquirA POLARBOX AGORA
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-8 text-white/72">
-                  Preencha o formulário ao lado ou contate-nos pelo nosso E-mail ou WhatsApp para receber atendimento humanizado do nosso time.
+                  Preencha o formulário ou contate-nos pelo nosso E-mail ou WhatsApp para receber atendimento humanizado do nosso time.
                 </p>
 
                 <div className="mt-8 space-y-4">
