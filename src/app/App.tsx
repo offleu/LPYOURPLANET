@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import {
   ArrowRight,
   BadgeCheck,
@@ -10,7 +10,6 @@ import {
   Lock,
   Mail,
   MapPin,
-  Menu,
   MessageCircle,
   Palette,
   Play,
@@ -18,7 +17,6 @@ import {
   Sparkles,
   Verified,
   Waves,
-  X,
 } from 'lucide-react';
 
 const navigation = [
@@ -187,7 +185,6 @@ function fadeInUp(reduceMotion: boolean, delay = 0) {
 
 export default function App() {
   const reduceMotion = useReducedMotion();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     nome: '',
     empresa: '',
@@ -221,10 +218,10 @@ export default function App() {
   return (
     <div className="overflow-x-clip bg-[var(--sand)] text-[var(--ink)] selection:bg-[var(--mint)]/30 selection:text-[var(--ink)]">
       <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 md:px-6">
-        <div className="mx-auto flex max-w-7xl items-center justify-between rounded-[0.45rem] border border-black/8 bg-white/88 px-4 py-3 shadow-[0_12px_34px_rgba(29,55,67,0.08)] backdrop-blur-md md:px-6">
-          <button className="flex items-center gap-3" onClick={() => scrollToSection('top')}>
-            <img src="/media/yourplanet-logo.png" alt="Your Planet Lifestyle" className="h-12 w-auto md:h-14" />
-            <div className="hidden sm:block">
+        <div className="mx-auto flex max-w-7xl items-center justify-center rounded-[0.45rem] border border-black/8 bg-white/88 px-4 py-4 shadow-[0_12px_34px_rgba(29,55,67,0.08)] backdrop-blur-md lg:justify-between md:px-6">
+          <button className="flex items-center justify-center gap-3" onClick={() => scrollToSection('top')}>
+            <img src="/media/yourplanet-logo.png" alt="Your Planet Lifestyle" className="h-20 w-auto md:h-14 lg:h-14" />
+            <div className="hidden lg:block">
               <p className="text-xs uppercase tracking-[0.35em] text-[var(--ocean)]/70">YourPlanet</p>
             </div>
           </button>
@@ -262,50 +259,7 @@ export default function App() {
             </a>
           </div>
 
-          <button
-            className="flex h-11 w-11 items-center justify-center rounded-[0.35rem] border border-[var(--ocean)]/10 bg-white/90 text-[var(--ocean)] lg:hidden"
-            onClick={() => setMobileMenuOpen((current) => !current)}
-            aria-label="Abrir menu"
-          >
-            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
         </div>
-
-        <AnimatePresence>
-          {mobileMenuOpen && (
-            <motion.div
-              initial={reduceMotion ? false : { opacity: 0, y: -12 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              exit={reduceMotion ? {} : { opacity: 0, y: -12 }}
-              transition={{ duration: 0.22 }}
-              className="mx-auto mt-3 max-w-7xl rounded-[0.45rem] border border-black/8 bg-white/94 p-4 shadow-[0_16px_42px_rgba(29,55,67,0.08)] backdrop-blur-md lg:hidden"
-            >
-              <div className="flex flex-col gap-2">
-                {navigation.map((item) => (
-                  <button
-                    key={item.target}
-                    onClick={() => {
-                      scrollToSection(item.target);
-                      setMobileMenuOpen(false);
-                    }}
-                    className="rounded-[0.35rem] px-4 py-3 text-left text-base text-[var(--ink)] transition hover:bg-[var(--foam)]"
-                  >
-                    {item.label}
-                  </button>
-                ))}
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-2 inline-flex items-center justify-center gap-2 rounded-[0.35rem] bg-[var(--ocean)] px-4 py-3 text-sm font-semibold text-white"
-                >
-                  WhatsApp
-                  <MessageCircle className="h-4 w-4" />
-                </a>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </header>
 
       <main id="top">
