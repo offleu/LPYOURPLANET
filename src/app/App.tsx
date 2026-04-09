@@ -219,7 +219,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[var(--sand)] text-[var(--ink)] selection:bg-[var(--mint)]/30 selection:text-[var(--ink)]">
+    <div className="overflow-x-clip bg-[var(--sand)] text-[var(--ink)] selection:bg-[var(--mint)]/30 selection:text-[var(--ink)]">
       <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 md:px-6">
         <div className="mx-auto flex max-w-7xl items-center justify-between rounded-[0.45rem] border border-black/8 bg-white/88 px-4 py-3 shadow-[0_12px_34px_rgba(29,55,67,0.08)] backdrop-blur-md md:px-6">
           <button className="flex items-center gap-3" onClick={() => scrollToSection('top')}>
@@ -326,17 +326,17 @@ export default function App() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(127,233,220,0.28),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,196,137,0.25),transparent_30%)]" />
           </div>
 
-          <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-32 sm:px-6 lg:px-8">
-            <div className="grid w-full gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-              <motion.div {...fadeInUp(!!reduceMotion)} className="max-w-3xl">
+          <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8">
+            <div className="grid w-full gap-8 sm:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+              <motion.div {...fadeInUp(!!reduceMotion)} className="min-w-0 max-w-3xl">
                 
 
-                <h1 className="font-display text-4xl leading-[0.96] text-white sm:text-5xl lg:text-8xl">
+                <h1 className="font-display text-[clamp(2.8rem,14vw,4.6rem)] leading-[0.96] text-white sm:text-5xl lg:text-8xl">
                   Retro Cooler
                   <span className="block text-[var(--sun)]">Distribuidor Oficial Polarbox.</span>
                 </h1>
 
-                <p className="mt-6 max-w-2xl text-base leading-7 text-white/82 sm:text-lg lg:text-xl">
+                <p className="mt-6 max-w-2xl text-sm leading-7 text-white/82 sm:text-lg lg:text-xl">
                   Descubra e escolha as diferentes combinações.
                   Uma Polarbox para cada momento e estilo…
 
@@ -359,7 +359,7 @@ export default function App() {
                     ['Diversas opções de cores e combinações', '02'],
                     ['Ideal para qualquer ocasião: resistente, leve e eficiente.', '03'],
                   ].map(([label, index]) => (
-                    <div key={index} className="rounded-[0.4rem] border border-white/15 bg-white/8 p-4 backdrop-blur-sm">
+                    <div key={index} className="min-w-0 rounded-[0.4rem] border border-white/15 bg-white/8 p-4 backdrop-blur-sm">
                       <p className="text-xs uppercase tracking-[0.3em] text-white/55">{index}</p>
                       <p className="mt-3 text-sm leading-6 text-white/85">{label}</p>
                     </div>
@@ -369,23 +369,23 @@ export default function App() {
 
               <motion.div
                 {...fadeInUp(!!reduceMotion, 0.12)}
-                className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 lg:justify-self-end"
+                className="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-1 lg:justify-self-end"
               >
 
-                <div className="rounded-[0.45rem] border border-black/8 bg-white/95 p-5 shadow-[0_14px_38px_rgba(12,25,33,0.08)]">
-                  <p className="text-xs uppercase tracking-[0.35em] text-[var(--ocean)]/55">Combine diferentes cores</p>
-                  <div className="mt-5 flex items-center gap-3">
+                <div className="w-full min-w-0 rounded-[0.45rem] border border-black/8 bg-white/95 p-4 sm:p-5 shadow-[0_14px_38px_rgba(12,25,33,0.08)]">
+                  <p className="text-[11px] uppercase tracking-[0.25em] text-[var(--ocean)]/55 sm:text-xs sm:tracking-[0.35em]">Combine diferentes cores</p>
+                  <div className="mt-5 flex flex-wrap items-center gap-2 sm:gap-3">
                     {['#7FE9DC', '#1E5DA8', '#FFC489', '#F6C6D1', '#2f3934', '#d3e6eb', '#c3dbc5', '#cfbdd5' , '#74c1bc'].map((color) => (
                       <span
                         key={color}
-                        className="h-10 w-10 rounded-[0.2rem] border border-black/5"
+                        className="h-8 w-8 shrink-0 rounded-[0.2rem] border border-black/5 sm:h-10 sm:w-10"
                         style={{ backgroundColor: color }}
                       />
                     ))}
                   </div>
                   <div className="mt-5 flex items-start gap-3 rounded-[0.35rem] bg-[var(--foam)] p-4">
-                    <Waves className="mt-1 h-5 w-5 text-[var(--ocean)]" />
-                    <p className="text-sm leading-6 text-[var(--ink)]/75">
+                    <Waves className="mt-1 h-5 w-5 shrink-0 text-[var(--ocean)]" />
+                    <p className="min-w-0 text-sm leading-6 text-[var(--ink)]/75">
                       Disponível nos tamanhos: 20L, 12L e Bag 6L.
                     </p>
                   </div>
