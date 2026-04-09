@@ -375,7 +375,7 @@ export default function App() {
                 <div className="w-full min-w-0 rounded-[0.45rem] border border-black/8 bg-white/95 p-4 sm:p-5 shadow-[0_14px_38px_rgba(12,25,33,0.08)]">
                   <p className="text-[11px] uppercase tracking-[0.25em] text-[var(--ocean)]/55 sm:text-xs sm:tracking-[0.35em]">Combine diferentes cores</p>
                   <div className="mt-5 flex flex-wrap items-center gap-2 sm:gap-3">
-                    {['#7FE9DC', '#1E5DA8', '#FFC489', '#F6C6D1', '#2f3934', '#d3e6eb', '#c3dbc5', '#cfbdd5' , '#74c1bc'].map((color) => (
+                    {['#7FE9DC', '#1E5DA8', '#FFC489', '#F6C6D1', '#2f3934', '#d3e6eb', '#c3dbc5', '#cfbdd5'].map((color) => (
                       <span
                         key={color}
                         className="h-8 w-8 shrink-0 rounded-[0.2rem] border border-black/5 sm:h-10 sm:w-10"
