@@ -717,11 +717,11 @@ export default function App() {
                     <p className="text-base leading-7">(48) 99155-7202</p>
                     <p className="wrap-safe text-base leading-7">yourplanet@gfpbrasil.com</p>
                     <p className="text-base leading-7">
-                      Rua dos Cações
+                      RODOVIA JOSE CARLOS DAUX SC 401, N° 5500, SALA 315
                       <br />
-                      Florianópolis - SC
+                      SACO GRANDE, FLORIANÓPOLIS - SC
                       <br />
-                      CEP: 88053-475
+                      CEP: 88.052-401
                     </p>
                   </div>
                 </div>
