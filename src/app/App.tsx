@@ -263,8 +263,8 @@ export default function App() {
       </header>
 
       <main id="top">
-        <section className="relative min-h-screen overflow-hidden">
-          <div className="absolute inset-0">
+        <section className="relative overflow-hidden bg-[var(--ink)] lg:min-h-screen">
+          <div className="relative h-[58vh] min-h-[360px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0">
             <video
               className="h-full w-full object-cover"
               autoPlay
@@ -280,7 +280,7 @@ export default function App() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(127,233,220,0.28),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,196,137,0.25),transparent_30%)]" />
           </div>
 
-          <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:px-8">
+          <div className="relative mx-auto flex max-w-7xl px-4 pb-16 pt-10 sm:px-6 sm:pt-16 lg:min-h-screen lg:items-center lg:px-8">
             <div className="grid w-full gap-8 sm:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
               <motion.div {...fadeInUp(!!reduceMotion)} className="min-w-0 max-w-3xl">
                 
