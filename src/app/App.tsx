@@ -353,12 +353,9 @@ export default function App() {
 
         <section id="lifestyle" className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <motion.div {...fadeInUp(!!reduceMotion)} className="mb-14 max-w-2xl">
+            <motion.div {...fadeInUp(!!reduceMotion)} className="mb-10 max-w-md">
               <p className="section-kicker">Lifestyle first</p>
-              <h2 className="font-display text-3xl leading-tight text-[var(--ink)] sm:text-5xl lg:text-6xl">
-                A Your Planet traz com exclusividade a Polarbox 
-              </h2>
-              <p className="mt-5 text-base leading-7 text-[var(--ink)]/72 sm:text-lg sm:leading-8">
+              <p className="mt-2 text-sm leading-6 text-[var(--ink)]/72 sm:text-base sm:leading-7">
                 Caixas térmicas com design vintage, cores em tons pastel e alças intercambiáveis que combinam estilo com alto desempenho.
               </p>
             </motion.div>
